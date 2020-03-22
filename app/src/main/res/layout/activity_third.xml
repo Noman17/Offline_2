@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <Button
+        android:id="@+id/prev_Page_ButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="50dp"
+        android:text="Prev Page" />
+
+    <Button
+        android:id="@+id/next_Page_ButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="250dp"
+        android:layout_y="50dp"
+        android:text="Next Page" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/pandaId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/panda"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/panda1Id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/panda1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/panda2Id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/panda2"
+            android:scaleType="fitCenter" />
+
+    </FrameLayout>
+
+</AbsoluteLayout>

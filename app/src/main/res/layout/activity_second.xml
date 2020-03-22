@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0"
+    tools:context=".SecondActivity">
+
+    <TableRow
+        android:id="@+id/titleRowId"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_span="4"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:text="Student Details"
+            android:textSize="15dp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/headerId"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="ID"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Setion"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Group"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row3Id"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="180104108"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Noman Ahmed"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row4Id"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="180104114"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Mehedi Hasan"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/buttonId"
+        >
+        <Button
+            android:id="@+id/prev_Page_ButtonId"
+            android:layout_column="0"
+            android:text="Prev page"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/next_Page_ButtonId"
+            android:layout_column="3"
+            android:text="Next Page"
+            android:textSize="15dp" />
+    </TableRow>
+
+</TableLayout>
