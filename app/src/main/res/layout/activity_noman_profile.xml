@@ -11,7 +11,7 @@
         android:id="@+id/welcomeTextId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="7dp"
         android:gravity="center"
         android:textSize="20dp" />
 
@@ -81,6 +81,7 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -107,6 +108,7 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -133,6 +135,7 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -159,6 +162,7 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -185,6 +189,7 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -211,12 +216,14 @@
                 android:padding="15dp"
                 android:textColor="@color/colorBlack"
                 android:textSize="15dp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/next_Page_ButtonId"
                 android:layout_width="wrap_content"
@@ -229,7 +236,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
-                android:text="Logout"/>
+                android:text="Logout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/courseId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Course Material" />
+
         </LinearLayout>
 
 

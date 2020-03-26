@@ -7,10 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button button;
-    private Button button1;
+    private Button button, button1, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,20 +18,11 @@ public class SecondActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.prev_Page_ButtonId);
         button1 = (Button) findViewById(R.id.next_Page_ButtonId);
+        button2 = findViewById(R.id.showVideoId);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nomanProfile();
-            }
-        });
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                thirdActivity();
-            }
-        });
+        button.setOnClickListener(this);
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
     }
 
     public void nomanProfile() {
@@ -48,5 +38,23 @@ public class SecondActivity extends AppCompatActivity {
     public void thirdActivity() {
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
+    }
+
+    public void videoActivity() {
+        Intent intent = new Intent(this, VideoActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.prev_Page_ButtonId) {
+            nomanProfile();
+        }
+        else if(v.getId() == R.id.showVideoId) {
+            videoActivity();
+        }
+        else if(v.getId() == R.id.next_Page_ButtonId) {
+            thirdActivity();
+        }
     }
 }

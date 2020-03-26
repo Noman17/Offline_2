@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="0"
+    android:stretchColumns="2"
     tools:context=".SecondActivity">
 
     <TableRow
@@ -19,7 +19,7 @@
             android:paddingLeft="10dp"
             android:textStyle="bold"
             android:textSize="15dp"
-            android:text="Team Member Details" />
+            android:text="Team X Details" />
     </TableRow>
 
     <TableRow
@@ -169,9 +169,15 @@
             android:textSize="15dp" />
 
         <Button
+            android:id="@+id/showVideoId"
+            android:layout_column="1"
+            android:text="Videos"
+            android:textSize="15dp" />
+
+        <Button
             android:id="@+id/next_Page_ButtonId"
             android:layout_column="3"
-            android:text="Next Page"
+            android:text="Images"
             android:textSize="15dp" />
     </TableRow>
 

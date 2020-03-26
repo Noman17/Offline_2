@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class NomanProfile extends AppCompatActivity implements View.OnClickListener{
 
-    private Button button, logout;
+    private Button button, logout, course;
     private TextView welcomeText, username, userid;
 
     @Override
@@ -26,13 +26,10 @@ public class NomanProfile extends AppCompatActivity implements View.OnClickListe
         userid =(TextView) findViewById(R.id.userIdShow);
         logout = findViewById(R.id.logout_PageId);
         button =(Button) findViewById(R.id.next_Page_ButtonId);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                secondActivity();
-            }
-        });
+        course =(Button) findViewById(R.id.courseId);
+        button.setOnClickListener(this);
         logout.setOnClickListener(this);
+        course.setOnClickListener(this);
 
         Bundle bundle = getIntent().getExtras();
         if(bundle!=null) {
@@ -56,27 +53,41 @@ public class NomanProfile extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
+    public void courseMaterial() {
+        Intent intent = new Intent(this, CourseMaterial.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Logout");
-        builder.setMessage("Confirm Logout?");
-        builder.setIcon(R.drawable.ic_action_alert);
-        builder.setCancelable(false);
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //NomanProfile.super.onBackPressed();
-                mainActivity();
-                Toast.makeText(NomanProfile.this, "Logout successful", Toast.LENGTH_SHORT).show();
-            }
-        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+        if(v.getId() == R.id.next_Page_ButtonId) {
+            secondActivity();
+        }
+        else if(v.getId() == R.id.logout_PageId) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Logout");
+            builder.setMessage("Confirm Logout?");
+            builder.setIcon(R.drawable.ic_action_alert);
+            builder.setCancelable(false);
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //NomanProfile.super.onBackPressed();
+                    mainActivity();
+                    Toast.makeText(NomanProfile.this, "Logout successful", Toast.LENGTH_SHORT).show();
+                }
+            }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
+        }
+        else if(v.getId() == R.id.courseId) {
+            courseMaterial();
+        }
+
     }
 }
