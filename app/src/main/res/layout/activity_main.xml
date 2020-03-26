@@ -2,27 +2,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/gradient"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp" >
+    android:paddingRight="16dp">
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/reminder" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/name">
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_marginBottom="35dp"
+            android:layout_above="@+id/editText2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="50dp"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText" />
 
         <Button
-            android:id="@+id/next_Page_ButtonId"
-            android:layout_width="wrap_content"
+            android:id="@+id/loginButtonId"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next Page" />
+            android:text="Login"/>
 
     </LinearLayout>
 

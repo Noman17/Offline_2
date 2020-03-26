@@ -23,7 +23,7 @@ public class SecondActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainActivity();
+                nomanProfile();
             }
         });
 
@@ -35,8 +35,13 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
-    public void mainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    public void nomanProfile() {
+        Intent intent = new Intent(this, NomanProfile.class);
+
+        intent.putExtra("welcome", "Welcome Noman Ahmed");
+        intent.putExtra("name", "Noman Ahmed");
+        intent.putExtra("studentId","1234");
+
         startActivity(intent);
     }
 

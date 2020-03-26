@@ -12,13 +12,14 @@
         android:layout_marginTop="20dp"
         >
         <TextView
+            android:id="@+id/teamNameId"
             android:layout_gravity="center_horizontal"
             android:layout_span="4"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             android:textStyle="bold"
-            android:text="Student Details"
-            android:textSize="15dp"/>
+            android:textSize="15dp"
+            android:text="Team Member Details" />
     </TableRow>
 
     <TableRow
@@ -108,6 +109,39 @@
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             android:text="Mehedi Hasan"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textSize="15dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row5Id"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="170204063"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Fardin Hasib"
             android:textSize="15dp" />
 
         <TextView

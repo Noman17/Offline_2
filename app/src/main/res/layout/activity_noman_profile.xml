@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".NomanProfile">
+
+    <TextView
+        android:id="@+id/welcomeTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/noman" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Username: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userNameShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="User ID: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userIdShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="35dp"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Email: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userEmailShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="48dp"
+                android:text="asiknoman150@gmail.com"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Semester: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userSemesterShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="20dp"
+                android:text="2/2"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Section/Group:"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userSectionShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="-10dp"
+                android:text="C/1"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Course Name: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userCourseNameShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="-7dp"
+                android:text="Software Development - |||"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:padding="15dp"
+                android:text="Course Title: "
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/userCourseTitleShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="4dp"
+                android:text="CSE 2200"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/next_Page_ButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Team Members" />
+
+            <Button
+                android:id="@+id/logout_PageId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:text="Logout"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
