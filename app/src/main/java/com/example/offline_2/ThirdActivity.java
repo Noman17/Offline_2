@@ -12,8 +12,7 @@ import android.widget.TextView;
 public class ThirdActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button button;
-    private Button button1;
-    private ImageView pandaImageView, panda1ImageView, panda2ImageView;
+    private ImageView routine1ImageView, routineImageView, pandaImageView, panda1ImageView, panda2ImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +20,9 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_third);
 
         button = (Button) findViewById(R.id.prev_Page_ButtonId);
-        button1 = (Button) findViewById(R.id.next_Page_ButtonId);
+
+        routine1ImageView = (ImageView) findViewById(R.id.routine1Id);
+        routineImageView = (ImageView) findViewById(R.id.routineId);
         pandaImageView = (ImageView) findViewById(R.id.pandaId);
         panda1ImageView = (ImageView) findViewById(R.id.panda1Id);
         panda2ImageView = (ImageView) findViewById(R.id.panda2Id);
@@ -33,6 +34,8 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
+        routineImageView.setOnClickListener(this);
+        routine1ImageView.setOnClickListener(this);
         pandaImageView.setOnClickListener(this);
         panda1ImageView.setOnClickListener(this);
         panda2ImageView.setOnClickListener(this);
@@ -45,20 +48,25 @@ public class ThirdActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.pandaId)
-        {
+        if(v.getId() == R.id.routineId) {
+            routineImageView.setVisibility(View.GONE);
+            routine1ImageView.setVisibility(View.VISIBLE);
+        }
+        else if(v.getId() == R.id.routine1Id) {
+            routine1ImageView.setVisibility(View.GONE);
+            pandaImageView.setVisibility(View.VISIBLE);
+        }
+        else if(v.getId() == R.id.pandaId) {
             pandaImageView.setVisibility(View.GONE);
             panda1ImageView.setVisibility(View.VISIBLE);
         }
-        else if(v.getId() == R.id.panda1Id)
-        {
+        else if(v.getId() == R.id.panda1Id) {
             panda1ImageView.setVisibility(View.GONE);
             panda2ImageView.setVisibility(View.VISIBLE);
         }
-        else if(v.getId() == R.id.panda2Id)
-        {
+        else if(v.getId() == R.id.panda2Id) {
             panda2ImageView.setVisibility(View.GONE);
-            pandaImageView.setVisibility(View.VISIBLE);
+            routineImageView.setVisibility(View.VISIBLE);
         }
     }
 }

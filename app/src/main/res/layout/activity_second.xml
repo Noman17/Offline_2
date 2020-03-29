@@ -1,184 +1,354 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="2"
+    android:orientation="vertical"
     tools:context=".SecondActivity">
 
-    <TableRow
-        android:id="@+id/titleRowId"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:id="@+id/teamNameId"
-            android:layout_gravity="center_horizontal"
-            android:layout_span="4"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:textStyle="bold"
-            android:textSize="15dp"
-            android:text="Team X Details" />
-    </TableRow>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
 
-    <TableRow
-        android:id="@+id/headerId"
-        android:layout_marginTop="15dp"
-        android:background="@color/colorPrimaryDark"
-        >
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="ID"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+        <TableRow
+            android:id="@+id/titleRowId"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/teamNameId"
+                android:gravity="center"
+                android:layout_span="5"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Class Schedule, Fall 2019" />
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Name"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+        </TableRow>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Setion"
-            android:textSize="15dp"
-            android:textStyle="bold" />
+        <TableRow
+            android:id="@+id/headerId"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            >
+            <TextView
+                android:layout_height="20dp"
+                android:text="   DAY"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Group"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-    </TableRow>
+        </TableRow>
 
-    <TableRow
-        android:id="@+id/row3Id"
-        android:background="@color/colorPrimary"
-        >
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="180104108"
-            android:textSize="15dp" />
+        <TableRow
+            android:id="@+id/row3Id"
+            android:background="@color/colorPrimary"
+            >
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Noman Ahmed"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="SUN"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="C"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="DEPT"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="1"
-            android:textSize="15dp" />
-    </TableRow>
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="ALGO"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-    <TableRow
-        android:id="@+id/row4Id"
-        android:background="@color/colorPrimary"
-        >
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="180104114"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="NM"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Mehedi Hasan"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="Algorithm lab"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="C"
-            android:textSize="15dp" />
+        </TableRow>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="1"
-            android:textSize="15dp" />
-    </TableRow>
+        <TableRow
+            android:id="@+id/row4Id"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="MON"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-    <TableRow
-        android:id="@+id/row5Id"
-        android:background="@color/colorPrimary"
-        >
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="170204063"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="CA"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="Fardin Hasib"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="NM"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="C"
-            android:textSize="15dp" />
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="MATH"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-        <TextView
-            android:layout_height="20dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:text="1"
-            android:textSize="15dp" />
-    </TableRow>
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="NM Lab"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
 
-    <TableRow
-        android:id="@+id/buttonId"
-        >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5Id"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="TUE"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="NM"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="ALGO"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="DEPT"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="ALP"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row6Id"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="WED"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="SD Lab"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="DEPT"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="MATH"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="CA"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row7Id"
+            android:background="@color/colorPrimary"
+            >
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="THUR"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="MATH"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="ALGO"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="CA"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/prev_Page_ButtonId"
-            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Prev page"
-            android:textSize="15dp" />
-
-        <Button
-            android:id="@+id/showVideoId"
-            android:layout_column="1"
-            android:text="Videos"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
             android:textSize="15dp" />
 
         <Button
             android:id="@+id/next_Page_ButtonId"
-            android:layout_column="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="205dp"
             android:text="Images"
-            android:textSize="15dp" />
-    </TableRow>
+            android:textSize="15dp"/>
 
-</TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

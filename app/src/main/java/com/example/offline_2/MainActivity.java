@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String userName = Name.getText().toString();
         String userPassword = Password.getText().toString();
 
-        if(userName.equals("Noman Ahmed") && userPassword.equals("1234")) {
+        if(userName.equals("Noman Ahmed") && userPassword.equals("180104108")) {
             Intent intent = new Intent(MainActivity.this, NomanProfile.class);
             Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
 

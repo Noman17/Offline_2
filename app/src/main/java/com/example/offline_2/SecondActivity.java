@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button button, button1, button2;
+    private Button button, button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
         button = (Button) findViewById(R.id.prev_Page_ButtonId);
         button1 = (Button) findViewById(R.id.next_Page_ButtonId);
-        button2 = findViewById(R.id.showVideoId);
 
         button.setOnClickListener(this);
         button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
     }
 
     public void nomanProfile() {
@@ -40,18 +38,10 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         startActivity(intent);
     }
 
-    public void videoActivity() {
-        Intent intent = new Intent(this, VideoActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.prev_Page_ButtonId) {
             nomanProfile();
-        }
-        else if(v.getId() == R.id.showVideoId) {
-            videoActivity();
         }
         else if(v.getId() == R.id.next_Page_ButtonId) {
             thirdActivity();

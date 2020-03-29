@@ -24,7 +24,7 @@ public class CourseMaterial extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_material);
 
-        button = findViewById(R.id.prev_PageId);
+        button =(Button) findViewById(R.id.prev_PageId);
         button.setOnClickListener(this);
 
         pdfListView =(ListView) findViewById(R.id.myPDFList);
@@ -57,9 +57,15 @@ public class CourseMaterial extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    public void coursesActivity() {
+        Intent intent = new Intent(this, CoursesActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, NomanProfile.class);
-        startActivity(intent);
+        if(v.getId() == R.id.prev_PageId) {
+            coursesActivity();
+        }
     }
 }

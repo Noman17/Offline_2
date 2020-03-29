@@ -53,8 +53,8 @@ public class NomanProfile extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    public void courseMaterial() {
-        Intent intent = new Intent(this, CourseMaterial.class);
+    public void coursesActivity() {
+        Intent intent = new Intent(this, CoursesActivity.class);
         startActivity(intent);
     }
 
@@ -86,7 +86,7 @@ public class NomanProfile extends AppCompatActivity implements View.OnClickListe
             alertDialog.show();
         }
         else if(v.getId() == R.id.courseId) {
-            courseMaterial();
+            coursesActivity();
         }
 
     }
